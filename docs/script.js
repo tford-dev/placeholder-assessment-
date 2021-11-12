@@ -45,7 +45,7 @@ const generatePosts = (id) =>{
             console.log(value);
             userPostsArr.map(userPost =>{
                 document.querySelector(`#user${userPost.userId}`).insertAdjacentHTML('afterend', `
-                    <h4>Posts</h4>
+                    <h4>Post #${userPost.id}</h4>
                     <div class="user-post-card">
                         <h5>${userPost.title}</h5>
                         <p>${userPost.body}</p>
