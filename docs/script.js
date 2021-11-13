@@ -37,7 +37,7 @@ const generatePosts = (id) =>{
     getJSON("https://jsonplaceholder.typicode.com/posts")
         .then(value => {
             let userPostsArr = [];
-            for(let i = 0; i < value.length; i++){
+            for(let i = value.length - 1; i >= 0; i--){
                 if(value[i].userId === id){
                     userPostsArr.push(value[i]);
                 }
